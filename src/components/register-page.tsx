@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -56,33 +56,25 @@ export default function LoginPage() {
                 type="submit"
                 className="w-full bg-[#0088CC] hover:bg-[#0077B3]"
               >
-                Ingresar
+                Registrarme
               </Button>
               <div className="text-sm">
-                <Link href="#" className="text-[#0088CC] hover:underline">
-                  ¿Olvidaste tu contraseña?
-                </Link>
-              </div>
-              <div className="text-sm">
-                <Link href="/register" className="text-[#0088CC] hover:underline">
-                    Registrarme
+                <Link href="/" className="text-[#0088CC] hover:underline">
+                  Volver a la página principal
                 </Link>
               </div>
             </form>
           </div>
+  
 
           {/* System Information */}
           <div>
             <h2 className="text-2xl text-gray-600 mb-6">Sistema de Gestión de Inscripciones a Exámenes Finales</h2>
             <p className="text-gray-600 mb-4">
-              Algunas de las cosas que podés hacer con este sistema son:
+              Importante:
             </p>
             <ul className="space-y-2 text-gray-600 list-disc pl-5">
-              <li>Inscribirte a mesas de exámenes.</li>
-              <li>Consultar el calendario de exámenes.</li>
-              <li>Consultar tus inscripciones.</li>
-              <li>Modificar o eliminar tus inscripciones.</li>
-              <li>Recibir notificaciones sobre la disponibilidad de los exámenes y el estado de tus inscripciones.</li>
+              <li>Solo alumnos registrados en la base de datos de la Institución pueden acceder a un panel de alumno. En el caso de no poder realizar el registro debes contactar con Administración.</li>
             </ul>
           </div>
         </div>
@@ -90,4 +82,3 @@ export default function LoginPage() {
     </div>
   )
 }
-
