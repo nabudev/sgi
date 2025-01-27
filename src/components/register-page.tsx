@@ -28,7 +28,7 @@ export default function RegisterPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Login Form */}
           <div>
-            <h1 className="text-2xl text-gray-600 mb-6">Ingresá tus datos</h1>
+            <h1 className="text-2xl text-gray-600 mb-6">Registrar un usuario</h1>
             <form className="space-y-4">
               <div className="space-y-2">
                 <label htmlFor="username" className="block text-gray-600">
