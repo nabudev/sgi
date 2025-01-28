@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
-export default function MisInscripciones() {
+export default function InforInscripciones() {
   return (
     <section className="py-12 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">Mis Inscripciones</h2>
           <Card className="bg-white dark:bg-gray-800 shadow-lg">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">Términos y Condiciones</h3>
