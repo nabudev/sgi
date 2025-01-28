@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import ProfileMenu from "@/components/ProfileMenu"
+import { User } from "lucide-react"
 
 const navLinks = [
   { href: "/home", label: "Inicio" },
@@ -40,6 +41,7 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
+            <User className="mr-2 h-4 w-4" />
             <ProfileMenu />
           </div>
           <div className="-mr-2 flex items-center sm:hidden">{/* Aquí iría el botón para el menú móvil */}</div>
