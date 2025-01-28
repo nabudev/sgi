@@ -2,6 +2,7 @@
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Button } from "@/components/ui/button"
 import { CalendarIcon } from "lucide-react"
+import { Edit, Trash } from "lucide-react"
 
 const examenes = [
   {
@@ -93,8 +94,12 @@ export default function MisInscripciones() {
                   </TableCell>
                   <TableCell>{examen.estado}</TableCell>
                   <TableCell>
-                    <Button variant="outline">Modificar</Button>
-                    <Button variant="outline">Eliminar</Button>
+                  <Button variant="outline">
+                    <Edit className="h-4 w-4" />
+                  </Button>
+                  <Button variant="outline">
+                    <Trash className="h-4 w-4" />
+                  </Button>
                   </TableCell>
                 </TableRow>
               ))}
