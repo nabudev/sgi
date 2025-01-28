@@ -14,14 +14,13 @@ export default function InforInscripciones() {
               </p>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 mb-6 text-left">
                 <li>Las inscripciones pueden ser modificadas hasta 48 horas antes del examen.</li>
-                <li>La eliminación de una inscripción solo es posible hasta 72 horas antes del examen.</li>
-                <li>Después de estos plazos, deberás contactar directamente con la secretaría académica.</li>
-                <li>La no presentación a un examen sin justificación válida puede resultar en sanciones académicas.</li>
+                <li>La eliminación de una inscripción solo es posible hasta 48 horas antes del examen.</li>
+                <li>Después de estos plazos, deberás contactar directamente con Administración.</li>
+                <li>La ausencia sin justificacion válida a un examen conlleva al aplazo y sanciones académicas.</li>
               </ul>
-              <p className="text-gray-600 dark:text-gray-400 mb-8">
-                Para más información, consulta el reglamento académico completo.
+              <p className="dark:text-gray-400 mb-8">
+                Para más información, consulta con Administración.
               </p>
-              <Button className="w-full sm:w-auto">Ver Mis Inscripciones</Button>
             </CardContent>
           </Card>
         </div>
