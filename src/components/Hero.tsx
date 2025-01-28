@@ -23,7 +23,7 @@ export default function Hero() {
       </h2>
       <Link
         href="#"
-        className="bg-blue-600 dark:bg-gray-800 rounded-xl text-white dark:text-gray-300 font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-orange-500 dark:hover:bg-gray-600 transition"
+        className="bg-blue-600 dark:bg-gray-800 rounded-xl text-white dark:text-gray-300 font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-blue-500 dark:hover:bg-gray-600 transition"
       >
         Comenzar
       </Link>
