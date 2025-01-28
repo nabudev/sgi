@@ -1,6 +1,6 @@
 import InforInscripciones from "@/components/InfoInscripciones";
 import Navbar from "@/components/Navbar";
-
+import MisInscripciones from "@/components/MisInscripciones";
 
 export default function Inscripciones(){
     return (
@@ -10,6 +10,7 @@ export default function Inscripciones(){
         </br>
         <br />
         <InforInscripciones/>
+        <MisInscripciones/>
         </>
     )
 }
