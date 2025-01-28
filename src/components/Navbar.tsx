@@ -5,8 +5,7 @@ import { usePathname } from "next/navigation"
 import ProfileMenu from "@/components/ProfileMenu"
 
 const navLinks = [
-  { href: "/", label: "Inicio" },
-  { href: "/calendario", label: "Calendario de exámenes" },
+  { href: "/home", label: "Inicio" },
   { href: "/inscripciones", label: "Mis Inscripciones" },
 ]
 
