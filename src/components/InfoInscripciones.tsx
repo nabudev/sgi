@@ -29,12 +29,10 @@ export default function TerminosYCondiciones() {
           <Card className="bg-primary/5">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Información Importante</h3>
-              <p className="text-lg">
               <ul className="list-disc pl-6 space-y-3 text-lg">
                 <li>No se permitirá rendir sin libreta.</li>
                 <li>Respetar la vestimenta acorde.</li>
               </ul>
-              </p>
               <p className="mt-4 text-lg font-semibold">
                 Para más información contactar con Administración:{" "}
                 <a href="mailto:admin@ejemplo.com" className="text-primary hover:underline">
