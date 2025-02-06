@@ -1,6 +1,17 @@
+'use client';
 import Link from "next/link"
 
 export default function Hero() {
+
+  //efecto de desplazamiento
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const calendario = document.getElementById("calendario");
+    if (calendario) {
+      calendario.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-blue-100 flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 dark:from-blue-800 dark:via-blue-700 dark:to-blue-800">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-800 dark:text-gray-300 sm:text-7xl">
@@ -22,6 +33,7 @@ export default function Hero() {
       Aquí podrás gestionar tus inscripciones de manera rápida y sencilla. Accede a las mesas de exámenes disponibles y confirma tus inscripciones con solo unos clics. ¡Comienza ahora y organiza tu próximo examen fácilmente!
       </h2>
       <Link
+        onClick={handleScroll}
         href="#"
         className="bg-blue-600 dark:bg-gray-800 rounded-xl text-white dark:text-gray-300 font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-blue-500 dark:hover:bg-gray-600 transition"
       >

@@ -7,7 +7,7 @@ export default function Home(){
         <>
         <Navbar/>
         <Hero/>
-        <CalendarioExamenes/>
+        <section id="calendario"><CalendarioExamenes/></section>
         </>
     )
 }
