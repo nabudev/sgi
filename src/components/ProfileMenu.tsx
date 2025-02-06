@@ -36,7 +36,7 @@ export default function ProfileMenu() {
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
-          <Link href="/mis-inscripciones">Mis Inscripciones</Link>
+          <Link href="/inscripciones">Mis Inscripciones</Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
