@@ -12,9 +12,10 @@ import {
   SidebarMenuButton,
 } from "@/components/ui/sidebar"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { GraduationCap, Users, ClipboardList, BookOpen, CalendarCheck, UserPlus } from "lucide-react"
+import { Home, GraduationCap, Users, ClipboardList, BookOpen, CalendarCheck, UserPlus } from "lucide-react"
 
 const menuItems = [
+  { name: "Inicio", icon: Home, path: "/admin/home" },
   { name: "Carreras", icon: GraduationCap, path: "/admin/carreras" },
   { name: "Alumnos", icon: Users, path: "/admin/alumnos" },
   { name: "Notas", icon: ClipboardList, path: "/admin/notas" },
