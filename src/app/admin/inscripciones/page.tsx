@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Check, X } from "lucide-react"
@@ -22,7 +22,11 @@ const inscripcionesIniciales: Inscripcion[] = [
 ]
 
 export default function Inscripciones() {
-  const [inscripciones, setInscripciones] = useState<Inscripcion[]>(inscripcionesIniciales)
+  const [inscripciones, setInscripciones] = useState<Inscripcion[]>([])
+
+  useEffect(() => {
+    setInscripciones(inscripcionesIniciales)
+  }, [])
 
   const handleConfirmar = (id: string) => {
     setInscripciones(
@@ -87,4 +91,5 @@ export default function Inscripciones() {
     </div>
   )
 }
+
 

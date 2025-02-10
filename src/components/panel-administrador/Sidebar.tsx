@@ -24,7 +24,7 @@ const menuItems = [
 ]
 
 export function AdminSidebar() {
-  const [userName, setUserName] = useState("Admin User")
+  const [userName] = useState("Admin User")
   const pathname = usePathname()
 
   return (
@@ -55,4 +55,5 @@ export function AdminSidebar() {
     </Sidebar>
   )
 }
+
 
